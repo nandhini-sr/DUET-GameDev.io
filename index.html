@@ -1,19 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>GameDev</title>
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-	
+	<title>Duet Game</title>
+	<link rel="stylesheet" type="text/css" href="css/styleGame.css">
 </head>
+
 <body>
-<button id="anti" onclick="anti()"><b>AntiClockwise<b></button>
-<button id="clock" onclick="clock()"><b>Clockwise<b></button>
-<center>
-<canvas height=700 width=400>
-</canvas>
-</center>
 
-<script type="text/javascript" src="gameloop.js"></script>
+<div><button id="button" onclick="clearLS()">Reset Table - Begin new Trials</button></div>
+<b><div id="cont"></div></b>
+<canvas id="canvas" width="500"></canvas>
+<img src="images/bgImg.png" class="btn" id="bgBtn">
+<img id="normBtn" class="btn" src="images/normBtn.png" width="200px" height="75px" onclick="setJS('duetGame.js')">
+<img id="hackBtn" class="btn" src="images/hackBtn.png" width="200px" height="75px" onclick="">
+<img id="tryAgainBtn" class="btn" src="images/tryBtn.png" height="200px" onclick="location.href='index.html'">
 
+
+
+
+
+<script>
+	var canvas = document.querySelector('canvas'); 
+    canvas.height = window.innerHeight; 
+
+	function setJS(fileName){
+	var element = document.createElement('script');
+	element.type = "text/javascript";
+	element.src = "javascript/"+fileName; 
+	document.body.appendChild(element);
+
+}
+
+	var arrHead = new Array();
+    arrHead = [' Duet Game Trial ',' Score '];      
+
+    function createTable() {
+        var scoreTable = document.createElement('table');
+        scoreTable.setAttribute('id', 'scoreTable');            
+
+        var tr = scoreTable.insertRow(-1);
+
+        for (var h = 0; h < arrHead.length; h++) {
+            var th = document.createElement('th');         
+            th.innerHTML = arrHead[h];
+            tr.appendChild(th);
+        }
+
+        var div = document.getElementById('cont');
+        div.appendChild(scoreTable);    
+    }
+    createTable();
+</script>
+
+<script type="text/javascript" src="javascript/setGame.js"></script>
 </body>
 </html>

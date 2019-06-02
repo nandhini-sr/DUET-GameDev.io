@@ -1,0 +1,57 @@
+        body{
+			margin: 0;
+		}
+		#canvas{
+			margin-left: 50px;
+			border: 1px solid lightgrey;
+		}
+		.btn{
+			position:absolute;
+			left:200px;
+		}
+        
+        #bgBtn{
+        	left:150px;
+        	top:150px;
+        }
+
+		#normBtn{
+			top:300px;
+		}
+
+		#hackBtn{
+			top:450px;
+		}
+
+		#tryAgainBtn{
+			left:120px;
+			top:300px;
+			display:none;
+		}
+		#bgImage{
+			top:10px;
+		}
+
+        table, th, td {
+          border: solid 1px #795548;
+          padding: 2px 3px;
+          text-align: center;
+
+
+           }
+         #cont{
+         	position:absolute;
+         	top:15%;
+         	left:50%;
+         	display:none;
+         }
+         #button{
+           position:absolute;
+	       display: none;
+	       top:5%;
+	       left:48%;
+	       background-color:#8bc34a;
+	       padding: 10px 10px 10px 10px;
+	       color: #000000;
+	       font-weight: bold;
+           }
