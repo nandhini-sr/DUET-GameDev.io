@@ -28,6 +28,28 @@
 			top:300px;
 			display:none;
 		}
+
+		#pauseBtn{
+           top:20px;
+           left:70px;
+           display:none;
+		}
+
+		#restartBtn{
+          top:20px;
+          left:140px;
+          display:none;
+		}
+        
+        #resumeBtn{
+        	top:400px;
+        	display:none;
+        }
+        #imageBtn{
+        	left:90px;
+        	top:30px;
+        	display:none;
+        }
 		#bgImage{
 			top:10px;
 		}
@@ -55,3 +77,4 @@
 	       color: #000000;
 	       font-weight: bold;
            }
+
