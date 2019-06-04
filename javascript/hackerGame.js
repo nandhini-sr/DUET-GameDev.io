@@ -9,6 +9,11 @@ var score = 0;
 var rank = 0;
 var start_time = 0;
 
+var bgBtn = document.getElementById('bgBtn');
+var normBtn = document.getElementById('normBtn');
+var hackBtn = document.getElementById('hackBtn');
+var image = document.getElementById('imageBtn');
+
 
 
 var table = document.getElementById('cont');
@@ -17,13 +22,15 @@ var resBtn = document.getElementById('restartBtn');
 var pauseBtn = document.getElementById('pauseBtn');
 var resumeBtn = document.getElementById('resumeBtn');
 
-
+bgBtn.style.display = "none";
+normBtn.style.display = "none";
+hackBtn.style.display = "none";
 
 resBtn.style.display = 'inline';
 table.style.display = "inline";
 button.style.display = 'inline';
 pauseBtn.style.display = 'inline';
-imageBtn.style.display = 'none';
+
 
 var scoreTab = document.getElementById('scoreTable');
 

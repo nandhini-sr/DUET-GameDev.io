@@ -5,7 +5,7 @@ bgBtn.style.display = 'inline';
 resBtn.style.display = 'none';
 pauseBtn.style.display = 'none';
 resumeBtn.style.display = 'none';
-imageBtn.style.display = 'none';
+
 
 function setlooptry(){
 	
