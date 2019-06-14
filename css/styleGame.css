@@ -22,10 +22,47 @@
 		#hackBtn{
 			top:450px;
 		}
+    
+		#hackPR{
+			left:120px;
+			top:250px;
+		}
+		#hack2player{
+			left:310px;
+			top:250px;
+		}
+		#hackCP{
+			left:120px;
+			top:450px;
+		}
+		#hackPU{
+			left:310px;
+			top:450px;
+		}
+		#hackSP{
+			top:350px;
+		}
 
 		#tryAgainBtn{
-			left:120px;
+			left:180px;
+			top:400px;
+			display:none;
+		}
+
+		#nextBtn{
+			left:180px;
+			top:400px;
+			display:none;
+		}
+
+		#gameOverBtn{
+			left:180px;
 			top:300px;
+			display:none;
+		}
+		#back2menu{
+			left:220px;
+			top:600px;
 			display:none;
 		}
 
@@ -46,8 +83,12 @@
         	display:none;
         }
         
-		#bgImage{
-			top:10px;
+		#affectionMeter{
+			top:100px;
+			left:70px;
+			display:none;
+			height:30px;
+			width:200px;
 		}
 
         table, th, td {
@@ -63,6 +104,7 @@
          	left:50%;
          	display:none;
          }
+         
          #button{
            position:absolute;
 	       display: none;

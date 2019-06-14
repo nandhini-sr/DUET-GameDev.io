@@ -9,13 +9,50 @@
 <div><button id="button" onclick="clearLS()">Reset Table - Begin new Trials</button></div>
 <b><div id="cont"></div></b>
 <canvas id="canvas" width="500"></canvas>
+
+
+<progress id="affectionMeter" class = 'btn' value='0' max='100'></progress>
+
+
 <img src="images/bgImg.png" class="btn" id="bgBtn">
-<img id="normBtn" class="btn" src="images/normBtn.png" width="200px" height="75px" onclick="setJS('duetGame.js')">
-<img id="hackBtn" class="btn" src="images/hackBtn.png" width="200px" height="75px" onclick="setJS('hackerGame.js')">
-<img id="tryAgainBtn" class="btn" src="images/tryBtn.png" height="200px" onclick="location.href='index.html'">
+<img id="normBtn" class="btn" src="images/normBtn.png" width="200px" height="75px" onclick="setJS('normalMode.js')">
+<img id="hackBtn" class="btn" src="images/hackBtn.png" width="200px" height="75px" onclick="setJS('hackerMenu.js')">
+<img id="tryAgainBtn" class="btn" src="images/tryAgainBtn.png" width="200px" height="75px" onclick="location.href='index.html'">
+
+<img id="hackPR" class="btn" src="images/hackPR.png" width="150px" height="70px" onclick="setJS('pauseRestartMode.js')" style="display:none;">
+<img id="hack2player" class="btn" src="images/hack2player.png" width="150px" height="70px" onclick="setJS('player2.js')" style="display:none;">
+<img id="hackCP" class="btn" src="images/hackCP.png" width="150px" height="70px" onclick="setJS('progress.js')" style="display:none;">
+<img id="hackPU" class="btn" src="images/hackPU.png" width="150px" height="70px" onclick="setJS('HFMode.js')" style="display:none;">
+<img id="hackSP" class="btn" src="images/hackSP.png" width="200px" height="75px" onclick="setJS('spritesMode.js')" style="display:none;">
+
+<img id="nextBtn" class="btn" src="images/nextBtn.png" width="200px" height="75px" onclick="nextPlayerGame()">
+<img id="back2menu" class="btn" src="images/back2menu.png" width="100px" height="50px" onclick="location.href='index.html'" style="display:none;">
+<img id="gameOverBtn" class="btn" src="images/gameOver.png" width="200px" height="75px">
+
+
 <img id="pauseBtn" class="btn" src="images/pauseBtn.jpg" width="50px" height="50px" onclick="callPause()">
 <img id="restartBtn" class="btn" src="images/restartBtn.jpg" width="50px" height="50px" onclick="restart()">
 <img id="resumeBtn" class="btn" src="images/resumeBtn.png" width="150px" height="50px" onclick="resume()">
+
+<img id="horlicks" class="btn" src="images/horlicks.PNG" style="display:none;">
+<img id="flightb" class="btn" src="images/flightb.PNG" style="display:none;">
+<img id="flighty" class="btn" src="images/flighty.PNG" style="display:none;">
+<img id="flightp" class="btn" src="images/flightp.PNG" style="display:none;">
+<img id="flightg" class="btn" src="images/flightg.PNG" style="display:none;">
+
+<img id="obstacles" class="btn" src="images/obstacles.png" style="display:none;">
+<img id="obstacleHit" class="btn" src="images/obstacleHit.PNG" style="display:none;">
+
+
+<img id="up" class="btn" src="images/up.png" style="display:none;">
+<img id="down" class="btn" src="images/down.png" style="display:none;">
+<img id="upr" class="btn" src="images/upr.png" style="display:none;">
+<img id="downr" class="btn" src="images/downr.png" style="display:none;">
+<img id="hitru" class="btn" src="images/hitru.PNG" style="display:none;">
+<img id="hitrd" class="btn" src="images/hitrd.PNG" style="display:none;">
+<img id="hitpu" class="btn" src="images/hitpu.PNG" style="display:none;">
+<img id="hitpd" class="btn" src="images/hitpd.PNG" style="display:none;">
+
 
 
 
@@ -50,7 +87,9 @@
         var div = document.getElementById('cont');
         div.appendChild(scoreTable);    
     }
+
     createTable();
+    
 </script>
 
 <script type="text/javascript" src="javascript/setGame.js"></script>
